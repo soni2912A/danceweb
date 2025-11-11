@@ -1,27 +1,23 @@
-import React from "react";
-import "./Navbar.css"; // import the CSS file
 
-const Navbar = () => {
+
+function Navbar() {
   return (
     <nav className="navbar">
-      {/* Left: Logo or Studio Name */}
-      <div className="navbar-logo">
-        Movement<span>Studios.</span>
+      <div className="nav- left">
+        <h2 className="logo">Movement Studios.</h2>
       </div>
 
-      {/* Center: Links */}
-      <ul className="navbar-links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#classes">Classes</a></li>
-        <li><a href="#about">About</a></li>
-      </ul>
+      <div className="nav-center">
+        <a href="#home">Home</a>
+        <a href="#classes">Classes</a>
+        <a href="#about">About</a>
+      </div>
 
-      {/* Right: Address */}
-      <div className="navbar-address">
-        224 Nostrand Ave, Brooklyn, NY
+      <div className="nav-right">
+        <p>224 Nostrand Ave, Brooklyn, NY</p>
       </div>
     </nav>
   );
-};
+}
 
 export default Navbar;
