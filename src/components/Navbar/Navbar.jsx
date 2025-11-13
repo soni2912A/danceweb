@@ -42,7 +42,7 @@ function Navbar() {
       </div>
 
       <div className="nav-right">
-        <h2 className="logo">Movement  Studios</h2>
+        <h2 className="logo">Movement  Studios.</h2>
       </div>
     </nav>
   );
