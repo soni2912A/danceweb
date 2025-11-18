@@ -1,0 +1,38 @@
+.founders-container {
+  padding: 3rem 2rem;
+}
+
+.founders-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.founder-quote {
+  padding: 2rem;
+}
+
+.founder-card {
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.founder-card.one {
+  background-image: url("/src/assets/founder1.jpg");
+}
+
+.founder-card.two {
+  background-image: url("/src/assets/founder2.jpg");
+  margin-top: -2rem;
+}
+
+.founder-card .text {
+  position: absolute;
+  bottom: 0;
+  padding: 1rem;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.6);
+}

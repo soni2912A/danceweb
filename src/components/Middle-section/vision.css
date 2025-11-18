@@ -1,0 +1,28 @@
+.vision-container {
+  display: flex;
+  height: 450px;
+}
+
+.vision-left {
+  flex: 1;
+  background: url("/src/assets/vision.jpg") center/cover;
+}
+
+.vision-right {
+  flex: 1;
+  padding: 4rem;
+}
+
+.vision-right h2 {
+  font-size: 3.2rem;
+  margin-bottom: 1rem;
+}
+
+.vision-right button {
+  margin-top: 1rem;
+  padding: 0.8rem 1.5rem;
+  background: #4338ca;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
