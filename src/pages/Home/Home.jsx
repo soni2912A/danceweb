@@ -1,20 +1,20 @@
 import React from "react";
-import "./home.css";
-import homeImage from "../../assets/images/h";
+import TickerBar from "../../components/Middle-section/TickerBar";
+import VisionSection from "../../components/Middle-section/VisionSection";
+import ClassesSection from "../../components/Middle-section/ClassesSection";
+import FoundersSection from "../../components/Middle-section/FoundersSection";
+import CTASection from "../../components/Middle-section/CTASection";
 
-function Home() {
+const Home = () => {
   return (
-    <section className="home">
-      <div className="overlay">
-        <img src={homeImage} alt="home background" className="home-bg" />
-        <div className="content">
-          <h1 className="title">Find your flow.</h1>
-          {/* <p className="subtitle">New Contemporary Dance Classes Now Enrolling</p> */}
-          <button className="btn">Reserve your spot</button>
-        </div>
-      </div>
-    </section>
+    <>
+      <TickerBar />
+      <VisionSection />
+      <ClassesSection />
+      <FoundersSection />
+      <CTASection />
+    </>
   );
-}
+};
 
 export default Home;

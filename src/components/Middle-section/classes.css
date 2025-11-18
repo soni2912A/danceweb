@@ -1,0 +1,23 @@
+.classes-container {
+  display: flex;
+  height: 450px;
+}
+
+.classes-left {
+  flex: 1;
+  background: url("/src/assets/classes.jpg") center/cover;
+  position: relative;
+}
+
+.classes-left h1 {
+  font-size: 4rem;
+  color: white;
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+}
+
+.classes-right {
+  flex: 1;
+  padding: 3rem;
+}
