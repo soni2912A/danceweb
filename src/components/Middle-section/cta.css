@@ -1,0 +1,15 @@
+.cta-section {
+  background: #1d4ed8;
+  color: white;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.cta-section button {
+  margin-top: 2rem;
+  padding: 0.8rem 1.6rem;
+  border: none;
+  background: white;
+  color: black;
+  cursor: pointer;
+}

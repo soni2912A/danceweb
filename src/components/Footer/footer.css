@@ -1,99 +1,134 @@
+/* Main Footer Container */
 .footer {
-    background-color: #c9f5f6;
-    color: #000;
-    font-family: Arial, sans-serif;
+  width: 100%;
+  background-color: #a5e3e7;
+  color: #000;
+  font-family: "Poppins", sans-serif;
+  margin-top: auto;
+}
+
+/* Top Section */
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; 
+  padding: 3rem 4rem;
+  flex-wrap: nowrap;
+  height: 28rem;
+}
+
+/* Left Logo */
+.footer-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.footer-logo {
+  font-size: 8rem;
+  font-weight: 700;
+  line-height: 0.9;
+  margin: 0;
+}
+
+/* Middle Section */
+.footer-center {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-left: 5rem;
+}
+
+.footer-title {
+  font-size: 1.2rem;
+}
+
+.footer-text {
+  font-size: 1.1rem;
+  margin: 2px 0;
+}
+
+/* Right Section */
+.footer-right {
+  flex: 1;
+  padding-left: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+/* Bottom Blocks */
+.footer-bottom {
+  display: flex;
+  width: 100%;
+}
+
+.footer-block {
+  flex: 1;
+  padding: 1.8rem;
+  font-size: 1.4rem;
+  font-weight: 600;
+  text-align: left;
+  padding-bottom: 8rem;
+}
+
+.blue { background-color: #181ec9; color: #fff; }
+.black { background-color: #000; color: #fff; }
+.pink { background-color: #cf14b0; }
+
+
+
+/* ----------------------------------------------------------- */
+/* ✅ MOBILE VIEW FIX — ONLY THIS PART ADDED */
+/* ----------------------------------------------------------- */
+@media (max-width: 768px) {
+
+  .footer-top {
+    flex-direction: column;
+    padding: 2rem 1.5rem;
+    height: auto;
   }
-  
-  /* Main footer layout */
-  .footer-main {
+
+/* MOBILE VIEW — LOGO HORIZONTAL */
+@media (max-width: 600px) {
+
+  .footer-logo {
+    line-height: 1.1;
+    font-size: 2.5rem; /* mobile friendly size */
+  }
+
+  .footer-logo br {
+    display: none; /* line break remove */
+  }
+
+  .footer-logo {
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    padding: 50px 80px;
-    flex-wrap: wrap;
+    gap: 6px;
   }
-  
-  .footer-logo h1 {
-    font-size: 64px;
-    font-weight: bold;
-    line-height: 1;
-    margin: 0;
+}
+
+
+
+  .footer-center,
+  .footer-right {
+    padding-left: 0;
+    margin-top: 1rem;
   }
-  
-  .footer-info {
-    display: flex;
-    gap: 50px;
-    flex-wrap: wrap;
+
+  .footer-text,
+  .footer-title {
+    font-size: 1rem;
   }
-  
-  .footer-column h3 {
-    font-size: 16px;
-    font-weight: bold;
-    margin-bottom: 8px;
-  }
-  
-  .footer-column p {
-    font-size: 14px;
-    margin: 4px 0;
-    line-height: 1.4;
-  }
-  
-  /* Bottom color boxes */
+
   .footer-bottom {
-    display: flex;
-    justify-content: space-between;
-    text-align: center;
-    font-weight: bold;
-    color: white;
+    flex-direction: column;
   }
-  
-  .footer-box {
-    flex: 1;
-    padding: 15px 0;
-    cursor: pointer;
+
+  .footer-block {
+    padding: 1.5rem;
+    padding-bottom: 3rem;
+    font-size: 1.2rem;
   }
-  
-  .footer-box.socials {
-    background-color: #0036ff;
-  }
-  
-  .footer-box.email {
-    background-color: #000000;
-  }
-  
-  .footer-box.book {
-    background-color: #e200ff;
-  }
-  
-  .footer-box:hover {
-    opacity: 0.8;
-  }
-  
-  /* Copyright text */
-  .footer-copy {
-    text-align: center;
-    font-size: 12px;
-    color: #555;
-    padding: 15px 0;
-  }
-  
-  /* Responsive styling */
-  @media (max-width: 768px) {
-    .footer-main {
-      flex-direction: column;
-      padding: 30px;
-    }
-  
-    .footer-logo {
-      margin-bottom: 20px;
-    }
-  
-    .footer-info {
-      flex-direction: column;
-      gap: 20px;
-    }
-  
-    .footer-bottom {
-      flex-direction: column;
-    }
-  }
+}
