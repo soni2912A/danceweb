@@ -8,11 +8,13 @@ import CTASection from "../../components/Middle-section/CTASection";
 const Home = () => {
   return (
     <>
+   
       <TickerBar />
       <VisionSection />
       <ClassesSection />
       <FoundersSection />
       <CTASection />
+      
     </>
   );
 };

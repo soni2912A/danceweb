@@ -1,4 +1,4 @@
-.ticker-wrapper {
+/* .ticker-wrapper {
   width: 100%;
   overflow: hidden;
   background: #1d4ed8;
@@ -29,4 +29,39 @@
   100% {
     transform: translateX(-50%);
   }
+} */
+
+
+/* Fix: keep ticker below navbar */
+.ticker-wrapper {
+  width: 100%;
+  overflow: hidden;
+  background: #1d4ed8;
+  padding: 0.8rem 0;
+  white-space: nowrap;
+
+  position: relative;
+  z-index: 1;        /* keeps it above background but below navbar */
+  margin-top: 80px;  /* pushes down so it's BELOW your navbar */
+}
+
+.ticker {
+  display: flex;
+  animation: scroll 15s linear infinite;
+}
+
+.ticker-content {
+  display: flex;
+  gap: 4rem;
+}
+
+.ticker-content p {
+  color: #fff;
+  font-size: 1rem;
+  margin: 0;
+}
+
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
 }

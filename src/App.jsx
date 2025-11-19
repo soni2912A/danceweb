@@ -8,7 +8,7 @@ function App() {
   return (
     <div className="app-container">
       <Navbar />
-      <div className="content">
+      <div className="content ">
         {/* Your main content or Routes */}
         <Home/>
       </div>
