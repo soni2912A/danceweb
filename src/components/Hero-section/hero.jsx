@@ -1,6 +1,7 @@
 import React from "react";
 import "./hero.css";
-import homep from "../../assets/images/homep.svg";   // Image import declaration
+// import homep from "../../assets/images/homep.svg"; 
+import homep from "../../assets/images/homep.jpg";  // Image import declaration
 
 // ------------ DECLARATION OF PROPS HERE ------------
 const Hero = ({ title, background }) => {
