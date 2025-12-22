@@ -119,7 +119,7 @@ function Team() {
     <p>
       Whether you’re a beginner looking to explore expressive movement or an 
       advanced dancer ready to refine your technique, we have classes for you! 
-      Join our weekly sessions, drop in for open level classes, or take part 
+      Join our weekly sessions, <span className="our-spacep">drop in for open level classes</span> , or take part 
       in our upcoming choreography series. Don’t miss our special Masterclasses 
       with visiting guest artists! Maximum 10 students. Saturday Limited spots available.
     </p>

@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Semi+Condensed:wght@300;400;600;700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Semi+Condensed:wght@300;400;600;700&display=swap'); */
+@import "@fontsource/encode-sans-expanded";
 
 
 .team {
@@ -24,6 +27,7 @@
   width: 100%;
   height: 450px;
   object-fit: cover;
+  margin: 0%;
 }
 
 .founder-card h2 {
@@ -39,6 +43,7 @@ font-weight: 500;
 
 .info.purple {
   background: #c947ff;
+  margin: 0%;
 }
 
 .info.blue {
@@ -54,6 +59,9 @@ font-weight: 500;
 
 .instructor-card h3 {
   font-size: 1.2rem;
+  font-weight: 400;
+  font-size: 16px;
+  font-family: 'Encode Sans Semi Condensed', sans-serif;
 }
 
 .instructor-card span {
@@ -157,6 +165,7 @@ font-weight: 500;
 .instructor-card {
   width: 50%;
   padding-bottom: 0%;
+  margin-bottom: 0%;
   /* padding-bottom: 25px; */
   border: 1px solid #242424;
 }
@@ -192,12 +201,16 @@ font-weight: 500;
 
 /* Description */
  .instructor-card  .desc {
-  font-size: 14px;
+  font-size: 16px;
   color: #bdbdbd;
   /* line-height: 1.6; */
   width: 100%;
   margin-top: 80px;
   padding: 15px;
+  
+ font-family: 'Encode Sans Expanded', sans-serif;
+  font-weight: 400;
+
 }
 
 
@@ -232,15 +245,20 @@ font-weight: 500;
 }
 
 .studio-right h2 {
-  font-size: 28px;
+  font-size: 20px;
   font-weight: 600;
   margin-bottom: 20px;
+  font-weight: 500;
+  font-family: 'Encode Sans Semi Condensed', sans-serif;
+  
 }
 
 .studio-right p {
-  font-size: 15px;
+  font-size: 17px;
   line-height: 1.7;
   color: #d0d0d0;
+  font-weight: 400;
+  font-family: 'Encode Sans Semi Condensed', sans-serif;
 }
 
 /* .instructors-section, */
@@ -249,7 +267,13 @@ font-weight: 500;
   padding: 0;
 }
 
-.ourspace-section {
-  margin-top: -5px; /* remove white gap */
+/* .ourspace-section {
+  margin-top: -5px;
+} */
+
+.our-spacep {
+  color: #b44dff;
+
 }
+
 
