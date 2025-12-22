@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Semi+Condensed:wght@300;400;600;700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Semi+Condensed:wght@300;400;600;700&display=swap'); */
+@import "@fontsource/encode-sans-expanded";
+
+
+.team {
+  background: black;
+  color: white;
+  padding: 0;
+  margin: 0%;
+}
+
+/* Section Title */
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 40px;
+   }
+
+/* Founders Grid */
+.founders-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.founder-card img {
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+  margin: 0%;
+}
+
+.founder-card h2 {
+  margin: 20px;
+font-weight: 500;
+  font-family: 'Encode Sans Semi Condensed', sans-serif;
+}
+
+.info {
+  padding: 20px;
+  color: black;
+}
+
+.info.purple {
+  background: #c947ff;
+  margin: 0%;
+}
+
+.info.blue {
+  background: #c0f0ff;
+}
+
+/* Instructors */
+.instructors-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px 40px;
+}
+
+.instructor-card h3 {
+  font-size: 1.2rem;
+  font-weight: 400;
+  font-size: 16px;
+  font-family: 'Encode Sans Semi Condensed', sans-serif;
+}
+
+.instructor-card span {
+  color: #b4b4b4;
+  font-size: .9rem;
+}
+
+.instructor-card p {
+  margin-top: 10px;
+  font-size: .95rem;
+  /* line-height: 1.4; */
+}
+
+/* Studio */
+.studio-grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 40px;
+}
+
+.studio-grid img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+
+@media(max-width:900px){
+  .founders-grid,
+  .instructors-grid,
+  .studio-grid {
+    grid-template-columns: 1fr;
+  }
+}
+.soni1{
+  display: flex;
+  width:100%;
+  height: 500px;
+}
+
+.soni2{
+ 
+  width: 500px;
+  display: flex;
+
+}
+
+.founder-card1 {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+
+}
+
+
+
+/* Instructors Main Section */
+.instructors-section {
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+  background: #000;
+  padding: 35px 0;
+  color: #fff;
+}
+
+/* Left Black Column */
+.instructors-left {
+  width: 37%;
+  /* font-weight: 500;
+  font-family: 'Encode Sans Semi Condensed', sans-serif;
+  font-size: 37px; */
+  /* padding-left: 60px; */
+  /* padding-top: 10px; */
+  /* padding-right: 30px; */
+  border: 1px solid #262626;
+}
+
+.instructors-left h2 {
+  
+  font-weight: 500;
+  font-family: 'Encode Sans Semi Condensed', sans-serif;
+  font-size: 37px;
+  margin: 20px;
+  /* font-weight: 600; */
+  /* letter-spacing: 2px; */
+  /* text-transform: uppercase; */
+  /* margin: 0; */
+}
+
+/* Right Grid */
+.instructors-right {
+  width: 72%;
+  padding: 0px;
+  display: flex;
+  flex-wrap: wrap;
+  /* column-gap: 80px; */
+  /* row-gap: 80px; */
+}
+
+/* Each Instructor Card (2-column layout) */
+.instructor-card {
+  width: 50%;
+  padding-bottom: 0%;
+  margin-bottom: 0%;
+  /* padding-bottom: 25px; */
+  border: 1px solid #242424;
+}
+
+/* Name */
+.instructor-card h3 {
+  margin: 10px 0 0 18px;   /* ❌ bottom gap removed */
+  font-size: 20px;
+  font-weight: 600;
+  padding: 0;
+}
+
+/* Role (Purple) */
+.instructor-card .role {
+  margin: 0 0 0 10px;   /* ❌ no gap from h3 */
+  font-size: 14px;
+  color: #b44dff;
+  padding-left: 10px;
+}
+
+/* Description */
+.instructor-card p {
+  margin: 0 0 0 10px;   /* ❌ no gap at all */
+  padding: 0;
+}
+
+.instructor-card h3,
+.instructor-card p {
+  margin-bottom: 0;
+  /* margin-top: 0; */
+}
+
+
+/* Description */
+ .instructor-card  .desc {
+  font-size: 16px;
+  color: #bdbdbd;
+  /* line-height: 1.6; */
+  width: 100%;
+  margin-top: 80px;
+  padding: 15px;
+  
+ font-family: 'Encode Sans Expanded', sans-serif;
+  font-weight: 400;
+
+}
+
+
+
+/* OUR SPACE SECTION */
+.ourspace-section {
+  display: flex;
+  width: 100%;
+  background: #000;
+  padding: 0;
+  margin-top: 40px;
+}
+
+/* LEFT SIDE IMAGE */
+.studio-left {
+  width: 70%;
+}
+
+.studio-left img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* RIGHT PANEL */
+.studio-right {
+  width: 30%;
+  background: #000;
+  padding: 60px 40px;
+  color: #fff;
+}
+
+.studio-right h2 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  font-weight: 500;
+  font-family: 'Encode Sans Semi Condensed', sans-serif;
+  
+}
+
+.studio-right p {
+  font-size: 17px;
+  line-height: 1.7;
+  color: #d0d0d0;
+  font-weight: 400;
+  font-family: 'Encode Sans Semi Condensed', sans-serif;
+}
+
+/* .instructors-section, */
+.ourspace-section {
+  margin: 0;
+  padding: 0;
+}
+
+/* .ourspace-section {
+  margin-top: -5px;
+} */
+
+.our-spacep {
+  color: #b44dff;
+
+}
+
+
