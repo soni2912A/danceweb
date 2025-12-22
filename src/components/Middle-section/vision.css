@@ -1,8 +1,17 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Condensed:wght@600&display=swap');
+@import "@fontsource/encode-sans-expanded"; 
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Semi+Condensed:wght@300;400;600;700&display=swap');
+
+
+
 /* Center Alignment */
 .vision-wrapper {
   display: flex;
   width: 100%;
   justify-content: center;
+
 }
 
 /* Two sections container */
@@ -11,21 +20,20 @@
   width: 100%;
   margin: 0;
   padding: 0;
+  min-height: 90vh;
 }
 
-/* BOTH SQUARES */
+/* BTH SQUARES */
 .square-box {
-  width: 50%;
-  height: 35rem;
+  flex: 1;
   overflow: hidden;
 }
 
-/* LEFT IMAGE — FULL IMAGE, NO CUT */
-.vision-left {
-  background-size: contain;     /* FULL image visible */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-color: transparent;       
+.vision-left img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  
 }
 
 /* RIGHT TEXT BLOCK */
@@ -35,18 +43,69 @@
   display: flex;
   flex-direction: column;
   justify-content: center; /* Center vertically */
+   border-bottom: 1px solid black;
+    /* height: 90%; */
+}
+.arrange-text {
+  padding: 5rem;
 }
 
 .vision-right h2 {
-  font-size: 2.8rem;
-  margin-bottom: 1rem;
+  /* font-size: 1.6rem; */
+  margin-bottom: 3rem;
+  font-family: 'Encode Sans Semi Condensed', sans-serif;
+  font-weight: 600; 
+  font-size: 20px; 
+  /* letter-spacing: 0.2px; */
+}
+.vision-right p{
+  margin-bottom: 2rem;
+  font-family: 'Encode Sans Semi Condensed', sans-serif;
+  font-weight: 400; 
+  font-size: 17px;
 }
 
 .vision-right button {
   margin-top: 1rem;
-  padding: 0.8rem 1.5rem;
-  background: #4338ca;
+  padding: 1rem 1.5rem;
+  background: #2200FF;
   border: none;
   color: white;
   cursor: pointer;
+  width: 16%;
+  font-size:13px;
+  font-family: 'Encode Sans Expanded', sans-serif;
+  font-weight: 400; /* Regular */
 }
+/* .vision-title {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  color: white;
+  font-size: 8rem;
+  font-weight: 600;
+  z-index: 10;
+  margin: 0;
+  height: 50%;
+} */
+.vision-title {
+  position: absolute;
+  top: 20px;
+  left: 40px;
+  color: white;
+  font-size: 126px;     
+  letter-spacing: -3px;      
+  line-height: 0.9;           
+  font-stretch: 50%;
+  font-family: "Encode Sans Condensed", sans-serif;
+  font-weight: 600;
+  font-size: 126px;
+  z-index: 10;
+  margin: 0; 
+ 
+}
+
+.vision-left {
+  position: relative;   
+}
+

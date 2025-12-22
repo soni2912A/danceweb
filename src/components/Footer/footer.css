@@ -1,3 +1,10 @@
+@import "@fontsource/encode-sans-expanded"; 
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Condensed:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&display=swap');
+
+
+
+
 /* Main Footer Container */
 .footer {
   width: 100%;
@@ -26,8 +33,9 @@
 }
 
 .footer-logo {
-  font-size: 8rem;
-  font-weight: 700;
+  font-family: "Encode Sans Condensed", sans-serif;
+  font-weight: 600;
+  font-size: 126px;
   line-height: 0.9;
   margin: 0;
 }
@@ -38,15 +46,19 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  padding-left: 5rem;
+  padding-left:0;
 }
 
 .footer-title {
-  font-size: 1.2rem;
+  font-size:16px;
+  font-family: 'Encode Sans Expanded', sans-serif;
+  font-weight: 400;
 }
 
 .footer-text {
-  font-size: 1.1rem;
+   font-size:16px;
+  font-family: 'Encode Sans Expanded', sans-serif;
+  font-weight: 400;
   margin: 2px 0;
 }
 
@@ -74,9 +86,20 @@
   padding-bottom: 8rem;
 }
 
-.blue { background-color: #181ec9; color: #fff; }
-.black { background-color: #000; color: #fff; }
-.pink { background-color: #cf14b0; }
+.blue { 
+  background-color: #181ec9; 
+  color: #fff;
+   font-family: 'DM Sans', sans-serif;
+  font-weight: 700; 
+  font-size: 24px;
+ }
+.black { 
+  background-color: #000; 
+  color: #fff; 
+}
+.pink { 
+  background-color: #cf14b0; 
+}
 
 
 
