@@ -1,38 +1,105 @@
-.founders-container {
-  padding: 3rem 2rem;
-}
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Semi+Condensed:wght@300;400;600;700&display=swap');
+@import "@fontsource/encode-sans-expanded"; 
 
-.founders-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2rem;
-  margin-top: 2rem;
-}
 
-.founder-quote {
-  padding: 2rem;
-}
 
-.founder-card {
-  height: 300px;
-  background-size: cover;
-  background-position: center;
-  position: relative;
-}
 
-.founder-card.one {
-  background-image: url("/src/assets/founder1.jpg");
-}
-
-.founder-card.two {
-  background-image: url("/src/assets/founder2.jpg");
-  margin-top: -2rem;
-}
-
-.founder-card .text {
-  position: absolute;
-  bottom: 0;
-  padding: 1rem;
+.founder-wrapper {
+  display: flex;
   width: 100%;
-  background: rgba(255, 255, 255, 0.6);
+  /* min-height: 100vh; */
+   z-index: 10;
+}
+
+/* LEFT SIDE */
+.founder-left {
+  width: 49%;
+  padding: 5rem 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: white;
+}
+
+.founder-left h2 {
+ font-weight: 600;
+  font-size: 37px;
+  font-family: 'Encode Sans Semi Condensed', sans-serif;
+  margin-bottom: 26rem;
+  margin-left: -2rem;
+}
+
+.quote {
+  font-family: 'Encode Sans Semi Condensed', sans-serif;
+  font-weight: 400; 
+  font-size: 30px;
+  margin-bottom: 10rem;
+  margin-left: -2rem;
+}
+
+.quote-author {
+  margin-top: -7rem;
+  font-family: 'Encode Sans Semi Condensed', sans-serif;
+  font-weight: 400; 
+  font-size: 17px;
+   margin-left: -2rem;
+}
+
+/* RIGHT SIDE USING FIGURE */
+.founder-right {
+  width: 55%;
+  display: flex;
+  flex-direction: column;
+  /* padding: 3rem; */
+}
+
+/* FIGURE STYLE */
+.founder-figure {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.founder-figure img {
+  width: 100%;
+  /* height: 380px; */
+  /* height: 35vh; */
+  aspect-ratio: 1/0.4;
+  object-fit: cover;
+}
+
+/* Caption (color strip) */
+.caption {
+  padding: 1.5rem 2rem;
+  /* font-family: "Encode Sans Semi Condensed", sans-serif; */
+  margin-top: -4px;
+}
+
+.caption h3 {
+  margin-bottom: 0.5em;
+ font-family: 'DM Sans', sans-serif;
+  font-weight: 700; 
+  font-size: 24px;
+  color:#000000;
+  /* padding-top: -9px; */
+}
+
+.caption p {
+  margin: 0px;
+  color: #000000;
+  font-size:16px;
+  font-family: 'Encode Sans Expanded', sans-serif;
+  font-weight: 400;
+}
+
+/* Colors */
+.magenta {
+  background: #ff00ff;
+  color: white;
+}
+
+.blue1 {
+  background: #c9f8ff;
+  color: black;
 }

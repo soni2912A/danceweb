@@ -9,12 +9,14 @@ import Hero from "../../components/Hero-section/hero";
 const Home = () => {
   return (
     <>
+   
       <Hero />
       <TickerBar />
       <VisionSection />
       <ClassesSection />
       <FoundersSection />
       <CTASection />
+      
 
     </>
   );
