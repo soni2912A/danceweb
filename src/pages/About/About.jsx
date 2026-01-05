@@ -3,6 +3,8 @@ import "./about.css";
 import Team from "../../components/Team/Team";
 
 import ClassesImage from "../../assets/images/about.jpg";
+import TickerBar from "../../components/Middle-section/TickerBar"
+import CTA from "../../components/Middle-section/CTASection"
 
 const About = () => {
   return (<>
@@ -14,11 +16,15 @@ const About = () => {
         <h1 className="classes-title">About Us</h1>
       </div>
       <div>
-      
+        <TickerBar/>
+                 
       {/* <Team/> */}
+
       </div>
     </section>
+    <TickerBar/>
     <Team/>
+    <CTA/>
     </>
   );
 };
