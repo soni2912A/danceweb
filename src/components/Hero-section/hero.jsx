@@ -15,9 +15,17 @@ const Hero = ({ title, background }) => {
 
       {/* Text + Button (declared) */}
       <div className="hero-content">
-        <h1 className="hero-title">
-          Find your <br /> flow.
-        </h1>
+        {/* <h1 className="hero-title">
+  <span className="find">Find</span>
+  <span className="flow">your flow.</span>
+</h1> */}
+<h1 className="hero-title">
+  <span className="find">
+    Find <span className="your">your</span>
+  </span>
+  <span className="flow">flow.</span>
+</h1>
+
 
         <button className="hero-btn">Reserve your spot</button>
       </div>
