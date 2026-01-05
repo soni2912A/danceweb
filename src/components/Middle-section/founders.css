@@ -3,6 +3,14 @@
 @import "@fontsource/encode-sans-expanded"; 
 
 
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+}
 
 
 .founder-wrapper {
@@ -95,11 +103,132 @@
 
 /* Colors */
 .magenta {
-  background: #ff00ff;
+  background: #D900FF;
   color: white;
 }
 
 .blue1 {
-  background: #c9f8ff;
+  background: #D0FBF9;
   color: black;
+  /* padding-bottom: 2rem; */
+}
+
+
+/* tab view */
+@media (max-width: 1024px) {
+  .founder-wrapper {
+    flex-direction: row;
+    height: 49vh;
+
+   
+  }
+
+  .founder-left {
+    /* padding: 5rem 3rem; */
+    width: 53.3%;
+    margin-bottom: -1.4rem;
+
+    
+  }
+
+  .founder-left h2 {
+    display: flex;
+    margin-bottom: 11rem;
+    font-weight: 600;
+    font-size: 37px;
+    font-family: 'Encode Sans Semi Condensed', sans-serif;
+ 
+
+  }
+  .founder-right{
+    /* margin-top: 1rem; */
+    
+   
+    
+  }
+
+  .quote {
+    margin-bottom: 2rem;
+    font-family: 'Encode Sans Semi Condensed', sans-serif;
+    font-weight: 400; 
+    font-size: 30px;
+  }
+
+  .quote-author {
+    display: flex;
+    margin-top: 1rem;
+    font-family: 'Encode Sans Semi Condensed', sans-serif;
+    font-weight: 400; 
+    font-size: 22px;
+  }
+
+  .caption h3 {
+    /* font-size: 20px; */
+     font-family: 'DM Sans', sans-serif;
+     font-weight: 600; 
+     font-size: 28px;
+  }
+
+  .caption p {
+    /* font-size: 18px; */
+    font-size:18px;
+    font-family: 'Encode Sans Expanded', sans-serif;
+    font-weight: 200;
+   
+  }
+}
+.blue1{
+  padding-bottom: 1rem;
+  /* margin-top: 1.5rem; */
+
+}
+.founder-figure img{
+  /* height: 60%; */
+ 
+
+}
+
+/* Mobile view */
+@media (max-width: 600px) {
+  .founder-wrapper {
+    flex-direction: column; /* stack: text top, image bottom */
+  }
+
+  .founder-left,
+  .founder-right {
+    width: 100%;
+  }
+
+  .founder-left {
+    padding: 2rem 1.5rem;
+  }
+
+  .founder-left h2 {
+    margin-bottom: 2rem;
+    text-align: left;
+  }
+
+  .quote {
+    margin-bottom: 1.5rem;
+  }
+
+  .quote-author {
+    margin-top: 0;
+  }
+
+  .founder-figure img {
+    aspect-ratio: 1 / 0.75;
+  }
+
+  .caption {
+    padding: 1rem 1.2rem;
+  }
+
+  .caption h3 {
+    font-size: 18px;
+  }
+
+  .caption p {
+    font-size: 14px;
+ }
 }

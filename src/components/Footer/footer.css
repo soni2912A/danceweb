@@ -1,164 +1,11 @@
-@import "@fontsource/encode-sans-expanded"; 
-@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Condensed:wght@600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&display=swap');
+@import "@fontsource/encode-sans-expanded";
+@import url("https://fonts.googleapis.com/css2?family=Encode+Sans+Condensed:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&display=swap");
 
+/* ================================================= */
+/* MAIN FOOTER */
+/* ================================================= */
 
-
-
-/* Main Footer Container */
-.footer {
-  width: 100%;
-  background-color: #a5e3e7;
-  color: #000;
-  font-family: "Poppins", sans-serif;
-  margin-top: auto;
-   z-index: 10;
-}
-
-/* Top Section */
-.footer-top {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start; 
-  padding: 3rem 4rem;
-  flex-wrap: nowrap;
-  height: 28rem;
-}
-
-/* Left Logo */
-.footer-left {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-}
-
-.footer-logo {
-  font-family: "Encode Sans Condensed", sans-serif;
-  font-weight: 600;
-  font-size: 126px;
-  line-height: 0.9;
-  margin: 0;
-}
-
-/* Middle Section */
-.footer-center {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  padding-left:0;
-}
-
-.footer-title {
-  font-size:16px;
-  font-family: 'Encode Sans Expanded', sans-serif;
-  font-weight: 400;
-}
-
-.footer-text {
-   font-size:16px;
-  font-family: 'Encode Sans Expanded', sans-serif;
-  font-weight: 400;
-  margin: 2px 0;
-}
-
-/* Right Section */
-.footer-right {
-  flex: 1;
-  padding-left: 5rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-}
-
-/* Bottom Blocks */
-.footer-bottom {
-  display: flex;
-  width: 100%;
-}
-
-.footer-block {
-  flex: 1;
-  padding: 1.8rem;
-  font-size: 1.4rem;
-  font-weight: 600;
-  text-align: left;
-  padding-bottom: 8rem;
-}
-
-.blue { 
-  background-color: #181ec9; 
-  color: #fff;
-   font-family: 'DM Sans', sans-serif;
-  font-weight: 700; 
-  font-size: 24px;
- }
-.black { 
-  background-color: #000; 
-  color: #fff; 
-}
-.pink { 
-  background-color: #cf14b0; 
-}
-
-
-
-/* ----------------------------------------------------------- */
-/* ✅ MOBILE VIEW FIX — ONLY THIS PART ADDED */
-/* ----------------------------------------------------------- */
-@media (max-width: 768px) {
-
-  .footer-top {
-    flex-direction: column;
-    padding: 2rem 1.5rem;
-    height: auto;
-  }
-
-/* MOBILE VIEW — LOGO HORIZONTAL */
-@media (max-width: 600px) {
-
-  .footer-logo {
-    line-height: 1.1;
-    font-size: 2.5rem; /* mobile friendly size */
-  }
-
-  .footer-logo br {
-    display: none; /* line break remove */
-  }
-
-  .footer-logo {
-    display: flex;
-    gap: 6px;
-  }
-}
-
-
-
-  .footer-center,
-  .footer-right {
-    padding-left: 0;
-    margin-top: 1rem;
-  }
-
-  .footer-text,
-  .footer-title {
-    font-size: 1rem;
-  }
-
-  .footer-bottom {
-    flex-direction: column;
-  }
-
-  .footer-block {
-    padding: 1.5rem;
-    padding-bottom: 3rem;
-    font-size: 1.2rem;
-  }@import "@fontsource/encode-sans-expanded"; 
-@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Condensed:wght@600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&display=swap');
-
-/* Main Footer Container */
 .footer {
   width: 100%;
   background-color: #a5e3e7;
@@ -166,24 +13,33 @@
   font-family: "Poppins", sans-serif;
   margin-top: auto;
   z-index: 10;
+
+  /* ❌ NO HIDE / NO SCALE */
+  transform: none;
+  opacity: 1;
 }
 
-/* Top Section */
+/* ================================================= */
+/* TOP SECTION */
+/* ================================================= */
+
 .footer-top {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start; 
+  align-items: flex-start;
   padding: 3rem 4rem;
-  flex-wrap: nowrap;
   height: 28rem;
 }
 
-/* Left Logo */
-.footer-left {
+.footer-left,
+.footer-center,
+.footer-right {
   flex: 1;
+}
+
+.footer-left {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
 }
 
 .footer-logo {
@@ -194,38 +50,33 @@
   margin: 0;
 }
 
-/* Middle Section */
+/* ================================================= */
+/* CENTER & RIGHT */
+/* ================================================= */
+
 .footer-center {
-  flex: 1;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  padding-left: 0;
+} 
+
+.footer-right {
+  padding-left: 5rem;
+  display: flex;
+  flex-direction: column;
 }
 
-.footer-title {
-  font-size: 16px;
-  font-family: 'Encode Sans Expanded', sans-serif;
-  font-weight: 400;
-}
-
+.footer-title,
 .footer-text {
   font-size: 16px;
-  font-family: 'Encode Sans Expanded', sans-serif;
+  font-family: "Encode Sans Expanded", sans-serif;
   font-weight: 400;
   margin: 2px 0;
 }
 
-/* Right Section */
-.footer-right {
-  flex: 1;
-  padding-left: 5rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-}
+/* ================================================= */
+/* BOTTOM BLOCKS */
+/* ================================================= */
 
-/* Bottom Blocks */
 .footer-bottom {
   display: flex;
   width: 100%;
@@ -234,92 +85,84 @@
 .footer-block {
   flex: 1;
   padding: 1.8rem;
+  padding-bottom: 8rem;
   font-size: 1.4rem;
   font-weight: 600;
-  text-align: left;
-  padding-bottom: 8rem;
 }
 
-.blue { 
-  background-color: #181ec9; 
+.blue {
+  background-color: #1F41FF;
   color: #fff;
-  font-family: 'DM Sans', sans-serif;
-  font-weight: 700; 
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
   font-size: 24px;
 }
 
-.black { 
-  background-color: #000; 
-  color: #fff; 
+.black {
+  background-color: #000;
+  color: #fff;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
 }
 
-.pink { 
-  background-color: #cf14b0; 
+.pink {
+  background-color: #D900FF;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
 }
 
-/* ----------------------------------------------------------- */
-/* MOBILE VIEW */
-/* ----------------------------------------------------------- */
-@media (max-width: 768px) {
 
-  .footer-top {
-    flex-direction: column;
-    padding: 2rem 1.5rem;
-    height: auto;
-  }
-
-  .footer-center,
-  .footer-right {
-    padding-left: 0;
-    margin-top: 1rem;
-  }
-
-  .footer-text,
-  .footer-title {
-    font-size: 1rem;
-  }
-
-  .footer-bottom {
-    flex-direction: column;
-  }
-
-  .footer-block {
-    padding: 1.5rem;
-    padding-bottom: 3rem;
-    font-size: 1.2rem;
-  }
-}
-
-/* MOBILE VIEW — LOGO HORIZONTAL */
-@media (max-width: 600px) {
-
+@media (max-width: 1024px){
   .footer-logo {
-    line-height: 1.1;
-    font-size: 2.5rem;
-    display: flex;
-    gap: 6px;
+  font-family: "Encode Sans Condensed", sans-serif;
+  font-weight: 600;
+  font-size: 90px;
+  margin-left: -2rem;
+  margin-top: -1.5rem;
   }
 
-  .footer-logo br {
-    display: none;
+  .footer-center{
+    margin-top: -1.5rem;
+    margin-left: 3rem;
   }
+
+  .footer-right{
+    margin-top: -1.5rem;
+  }
+
+  .footer-top{
+    background-color: #D0FBF9;
+  }
+  .footer-title,
+  .footer-text {
+  font-size: 15px;
+  font-family: "Encode Sans Expanded", sans-serif;
+  font-weight: 400;
 }
 
-/* =========================================================== */
-/* ✅ FOOTER SCROLL GROW-UP ANIMATION (ADDED) */
-/* =========================================================== */
-
-.footer {
-  transform: scaleY(0);
-  transform-origin: bottom;
-  opacity: 0;
-  transition: transform 0.9s cubic-bezier(0.4, 0, 0.2, 1),
-  opacity 0.9s ease;
+.footer-bottom{
+margin-top: -3rem;
+}
+.blue {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
 }
 
-.footer.footer-visible {
-  transform: scaleY(1);
-  opacity: 1;
+.black {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.pink {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
 }
 
 }
+
+

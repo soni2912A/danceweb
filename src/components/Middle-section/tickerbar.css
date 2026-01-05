@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Semi+Condensed:wght@600&display=swap');
+
+
+
 /* .ticker-wrapper {
   width: 100%;
   overflow: hidden;
@@ -37,12 +41,13 @@
   /* position: absolute; */
   width: 100%;
   overflow: hidden;
-  background: #1d4ed8;
+  background: #1F41FF;
   padding: 0.8rem 0;
   /* white-space: nowrap; */
   position: relative;
   z-index: 10;        /* keeps it above background but below navbar */
   /* margin-top: 80px;  pushes down so it's BELOW your navbar */
+
 }
 
 .ticker {
@@ -61,12 +66,42 @@
 
 .ticker-content p {
   color: #fff;
-  font-size: 1rem;
+  font-size: 15px;
   margin: 0;
   white-space: nowrap;
+  font-family: 'Encode Sans Semi Condensed', sans-serif;
+  font-weight: 600;
+
 }
 
 @keyframes scroll {
   0% { transform: translateX(0); }
   100% { transform: translateX(-50%); }
 }
+
+/* tab view */
+@media screen and (max-width:64rem){
+  .ticker-wrapper{
+    margin-top: -5rem;
+    padding: 1.6rem;
+  }
+  .ticker-content p{
+    font-family: 'Encode Sans Semi Condensed', sans-serif;
+    font-weight: 600;
+    font-size: larger;
+  }
+
+}
+
+/* mobile view */
+    @media screen and (max-width:48rem){
+    .ticker-wrapper{
+    margin-top: -5rem;
+    padding: 1.2rem;
+  }
+  .ticker-content p{
+    font-family: 'Encode Sans Semi Condensed', sans-serif;
+    /* font-weight: 0; */
+    font-size: 1rem;
+  }
+    }

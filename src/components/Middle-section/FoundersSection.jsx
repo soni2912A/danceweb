@@ -10,7 +10,7 @@ const FoundersSection = () => {
       {/* LEFT SIDE */}
       <div className="founder-left">
         <h2>Our Founders</h2>
-        <p className="quote">"Find your flow, and dance your <br />truth."</p>
+        <p className="quote">"Find your flow, and dance your truth."</p>
         <p className="quote-author">— Sophia Bennett</p>
       </div>
 

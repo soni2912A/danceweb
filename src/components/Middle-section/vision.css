@@ -5,6 +5,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Semi+Condensed:wght@300;400;600;700&display=swap');
 
 
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
 
 /* Center Alignment */
 .vision-wrapper {
@@ -94,7 +103,7 @@
   top: 20px;
   left: 40px;
   color: white;
-  font-size: 126px;     
+  /* font-size: 126px;      */
   letter-spacing: -3px;      
   line-height: 0.9;           
   font-stretch: 50%;
@@ -109,4 +118,146 @@
 .vision-left {
   position: relative;   
 }
+/* tab view */
+@media (max-width: 1024px) {
 
+  .vision-container {
+    display: flex;
+    flex-direction: row;
+    min-height: auto;   /* auto height */
+  }
+
+  .vision-left,
+  .vision-right {
+    flex: 0 0 50%;
+    width: 50%;
+    height: 45vh;   
+  }
+
+  .vision-left img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  /* Overlay title */
+  .vision-title {
+    font-size: 72px;
+    top: 30px;
+    left: 30px;
+    line-height: 1;
+    letter-spacing: -2px;
+  }
+
+  /* Right side layout */
+  .vision-right {
+    display: flex;
+    align-items: flex-start;  
+    justify-content: center;
+    padding: 0;          
+  }
+
+  .arrange-text {
+    padding: 2.5rem;
+    width: 100%;
+  }
+
+  /* Fonts */
+  .vision-right h2 {
+    font-family: 'Encode Sans Semi Condensed', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+  }
+
+  .vision-right p {
+    font-family: 'Encode Sans Semi Condensed', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.7;
+    letter-spacing: 0.15px;
+    margin-bottom: 1.8rem;
+  }
+
+  .vision-right button {
+    font-family: 'Encode Sans Expanded', sans-serif;
+    width: 130px;
+    font-weight: 400;
+    letter-spacing: 0.8px;
+    padding: 1rem 1.2rem;
+    font-size: 13px;
+  }
+}
+/* mobile view   */
+@media (max-width: 600px) {
+
+  /* Stack vertically */
+  .vision-container {
+    flex-direction: column;
+  }
+
+  /* Image full width */
+  .vision-left,
+  .vision-right {
+    width: 100%;
+    flex: none;
+  }
+
+  .vision-left img {
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+  }
+
+  /* Title on image */
+  .vision-title {
+    font-size: 70px;
+    font-family: "Encode Sans Condensed", sans-serif;
+  font-weight: 600;
+  /* font-size: 126px; */
+    top: 20px;
+    left: 20px;
+    line-height: 1;
+  }
+
+  /* Text BELOW image */
+  .vision-right {
+    padding: 1.5rem;
+  }
+
+  .arrange-text {
+    padding: 0; /* avoid double padding */
+  }
+
+  /* SAME WIDTH + FONT SCALE */
+  .vision-right h2 {
+    font-family: 'Encode Sans Semi Condensed', sans-serif;
+    font-weight: 600; 
+    margin-bottom:1.8rem;
+    font-size: 23px;
+  }
+
+  .vision-right p {
+    font-family: 'Encode Sans Semi Condensed', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6;
+    letter-spacing: 0.15px;
+    margin-bottom: 1.5rem;
+  }
+
+  .vision-right button {
+    width: 30%;
+    font-family: 'Encode Sans Expanded', sans-serif;
+    font-size: 13px;
+    padding: 0.9rem;
+    letter-spacing: 0.8px;
+    /* margin-bottom: 1.3rem; */
+    margin-top: 0.3rem;
+  }
+
+   .vision-right button:hover{
+    background-color: #1F41FF;
+   }
+}

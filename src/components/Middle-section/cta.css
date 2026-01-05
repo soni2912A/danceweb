@@ -2,8 +2,16 @@
 @import "@fontsource/encode-sans-expanded"; 
 
 
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  overflow-x: hidden;
+}
+
 .cta-section {
-  background: #1d4ed8;
+  background: #1F41FF;
   color: white;
   padding: 11rem 23rem;
   text-align: left;
@@ -26,3 +34,56 @@
   font-family: 'Encode Sans Expanded', sans-serif;
   font-weight: 400;
 }
+
+/* tab view */
+
+@media (max-width: 1024px) {
+
+  .cta-section {
+    padding: 6rem 4rem;
+    text-align: left;
+    margin-top: 1.3rem;
+    /* font-weight: 100;
+    font-size: 25px;
+    font-family: 'Encode Sans Semi Condensed', sans-serif; */
+   
+  }
+  .cta-section h2{
+    /* letter-spacing: 1px; */
+    font-weight: 600;
+    font-size: 42px;
+    font-family: 'Encode Sans Semi Condensed', sans-serif;
+  }
+
+  .cta-section button {
+    margin-top: 2rem;
+    padding: 1.3rem;
+    width: 27%;
+    font-size: 16px;
+    font-family: 'Encode Sans Expanded', sans-serif;
+    font-weight: 400;
+    /* padding-top: 2rem; */
+  }
+  .cta-section button:hover{
+    background-color:#D900FF ;
+    color: white;
+  }
+}
+
+
+/* mobile view */
+@media (max-width: 600px) {
+
+  .cta-section {
+    padding: 4rem 1.5rem;
+    text-align: center;
+    font-size: 18px;
+  }
+
+  .cta-section button {
+    width: 100%;
+    max-width: 280px;
+    padding: 0.9rem 1rem;
+  }
+}
+
