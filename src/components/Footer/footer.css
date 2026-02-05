@@ -8,7 +8,7 @@
 
 .footer {
   width: 100%;
-  background-color: #a5e3e7;
+  background-color: #D0FBF9;
   color: #000;
   font-family: "Poppins", sans-serif;
   margin-top: auto;
@@ -28,7 +28,7 @@
   justify-content: space-between;
   align-items: flex-start;
   padding: 3rem 4rem;
-  height: 28rem;
+  height: 30rem;
 }
 
 .footer-left,
@@ -88,7 +88,9 @@
   padding-bottom: 8rem;
   font-size: 1.4rem;
   font-weight: 600;
-}
+} 
+
+
 
 .blue {
   background-color: #1F41FF;

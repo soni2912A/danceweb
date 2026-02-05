@@ -1,31 +1,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Semi+Condensed:wght@300;400;600;700&display=swap');
 @import "@fontsource/encode-sans-expanded"; 
 
-
-* {
-  box-sizing: border-box;
-}
-
-html, body {
-  overflow-x: hidden;
-}
-
 .cta-section {
   background: #1F41FF;
   color: white;
-  padding: 11rem 23rem;
+  padding: 0 13rem;
+  min-height: 50vh;           
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
   text-align: left;
   font-weight: 500;
   font-size: 22px;
   font-family: 'Encode Sans Semi Condensed', sans-serif;
   /* margin-top: -91px; */
    z-index: 10;
+  
+
+} 
+
+.cta-section h2{
+ padding-left: 7rem;
+  width: 81.5%;
+  font-weight: 550;
+  font-size: 33px;
+  font-family: 'Encode Sans Semi Condensed', sans-serif;
 
 }
 
 .cta-section button {
   margin-top: 2rem;
-  padding: 0.8rem 1.2rem;
+  margin-left: 7rem;
+  padding: 1rem 1rem;
   border: none;
   background: #D0FBF9;
   color: black;
@@ -33,21 +39,22 @@ html, body {
   font-size:13px;
   font-family: 'Encode Sans Expanded', sans-serif;
   font-weight: 400;
+  width: 11.5%;
+ 
 }
 
 /* tab view */
 
-@media (max-width: 1024px) {
+@media (min-width: 767px) and (max-width: 992px) {
 
   .cta-section {
     padding: 6rem 4rem;
     text-align: left;
-    margin-top: 1.3rem;
+    /* margin-top: 5.7rem; */
     /* font-weight: 100;
     font-size: 25px;
     font-family: 'Encode Sans Semi Condensed', sans-serif; */
-   
-  }
+  }  
   .cta-section h2{
     /* letter-spacing: 1px; */
     font-weight: 600;
@@ -57,8 +64,8 @@ html, body {
 
   .cta-section button {
     margin-top: 2rem;
-    padding: 1.3rem;
-    width: 27%;
+    /* padding: 1.3rem; */
+    /* width: 27%; */
     font-size: 16px;
     font-family: 'Encode Sans Expanded', sans-serif;
     font-weight: 400;
@@ -72,18 +79,35 @@ html, body {
 
 
 /* mobile view */
-@media (max-width: 600px) {
+@media screen and (max-width: 768px) {
 
   .cta-section {
+    /* height: 30vh; */
+    /* margin-top: 40rem; */
     padding: 4rem 1.5rem;
     text-align: center;
-    font-size: 18px;
+    /* font-size: 18px; */
+    font-size: 10px;
+    font-weight: 100;
+    
   }
 
   .cta-section button {
-    width: 100%;
-    max-width: 280px;
-    padding: 0.9rem 1rem;
+    width: 55%;
+    /* max-width: 280px; */
+    margin-left: 2rem;
+   font-size: 1rem;
+
+    /* padding: 0.9rem 1rem; */
+  }
+
+  .cta-section h2{
+     font-size: 1.9rem;
+     width: 100%;
+     margin-left: -5rem;
+     text-align: left;
+     font-weight: 600;
+
   }
 }
 
