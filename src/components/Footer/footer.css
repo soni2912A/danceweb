@@ -2,9 +2,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Encode+Sans+Condensed:wght@600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&display=swap");
 
-/* ================================================= */
-/* MAIN FOOTER */
-/* ================================================= */
 
 .footer {
   width: 100%;
@@ -14,14 +11,10 @@
   margin-top: auto;
   z-index: 10;
 
-  /* ❌ NO HIDE / NO SCALE */
+
   transform: none;
   opacity: 1;
 }
-
-/* ================================================= */
-/* TOP SECTION */
-/* ================================================= */
 
 .footer-top {
   display: flex;
@@ -50,10 +43,6 @@
   margin: 0;
 }
 
-/* ================================================= */
-/* CENTER & RIGHT */
-/* ================================================= */
-
 .footer-center {
   display: flex;
   flex-direction: column;
@@ -72,10 +61,6 @@
   font-weight: 400;
   margin: 2px 0;
 }
-
-/* ================================================= */
-/* BOTTOM BLOCKS */
-/* ================================================= */
 
 .footer-bottom {
   display: flex;
@@ -115,8 +100,8 @@
   font-size: 24px;
 }
 
-
-@media (max-width: 1024px){
+/* tab view */
+@media screen and (min-width: 768px) and (max-width: 992px){
   .footer-logo {
   font-family: "Encode Sans Condensed", sans-serif;
   font-weight: 600;
@@ -167,4 +152,38 @@ margin-top: -3rem;
 
 }
 
+/* for mobile view */
+@media screen and (max-width: 768px){
 
+  .footer-top {
+    flex-direction: column;   /* ← main fix */
+    padding: 2rem;
+    height: auto;
+  }
+
+  .footer-left {
+    margin-bottom: 1.5rem;
+  }
+
+  .footer-logo {
+    font-size: 72px;
+  }
+
+  .footer-center,
+  .footer-right {
+    padding-left: 0rem;
+    margin-bottom: 1.5rem;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+  }
+
+  .footer-bottom {
+    flex-direction: column;   /* blue black pink khali yetil */
+    
+  }
+
+  .footer-block {
+    padding: 1.2rem;
+    padding-bottom: 8rem;
+  }
+}

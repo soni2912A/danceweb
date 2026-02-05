@@ -115,7 +115,7 @@
   position: relative;   
 }
 /* tab view */
-@media (min-width: 767px) and (max-width: 992px) {
+@media (min-width: 768px) and (max-width: 992px) {
 
   .vision-wrapper{
     min-height: auto;

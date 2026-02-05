@@ -111,7 +111,7 @@ const Footer = () => {
       {/* Left Logo */}
       <div className="footer-left">
         <h1 className="footer-logo">
-          Mov.<br />Stu. </h1>
+          Mov.Stu. </h1>
       </div> {/* Middle Contact */}
       <div className="footer-center">
         <p className="footer-title">Email:</p>
