@@ -19,6 +19,7 @@ const ClassMani = () => {
     
           <Team2 />
           
+          
           </>
 
   );

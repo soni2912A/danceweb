@@ -312,9 +312,9 @@
 .footer {
   transform: scaleY(0);
   transform-origin: bottom;
-  opacity: 0;
-  transition: transform 0.9s cubic-bezier(0.4, 0, 0.2, 1),
-  opacity 0.9s ease;
+  /* opacity: 0; */
+  /* transition: transform 0.9s cubic-bezier(0.4, 0, 0.2, 1), */
+  /* opacity 0.9s ease; */
 }
 
 .footer.footer-visible {

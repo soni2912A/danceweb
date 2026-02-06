@@ -59,6 +59,7 @@
 .flow {
   display: block;          
   margin-top: -12px;
+  font-size: 110px;
 }
 
 
@@ -69,7 +70,7 @@
   font-size: 1rem;
   cursor: pointer;
   transition: 0.2s;
-  margin-top: 30%;
+  margin-top: 25%;
   position: relative;
   
 }
@@ -79,15 +80,34 @@
 }
 
 
-/* @media (max-width: 1024px) {
+@media (min-width: 769px) and (max-width: 1024px) {
+
   .find {
-    font-size: 120px;
+    margin-top: 40%;
+    display: inline-block;
+    font-size: 140px;
+    letter-spacing: 0.4rem;
+    margin-bottom: 20px;
+  }
+
+  .your {
+    font-size: 70px;
+    margin-left: 14px;
+    letter-spacing: 0.4rem;
   }
 
   .flow {
-    font-size: 180px;
+    display: block;
+    font-size: 80px;
+    margin-top: -6px;
+    letter-spacing: 0.4rem;
   }
-} */
+
+  /* .hero-btn{
+    
+  } */
+}
+
 
 @media (max-width: 768px) {
 
@@ -97,22 +117,22 @@
     left: 5%;
   }
 
-
   .find {
-    display: flex;      
+    display: block;
     font-size: 92px;
-    
+    line-height: 1;
   }
 
   .your {
-    display: inline;       
+    display: inline;
+    font-size: 38px;
     margin-left: 0;
   }
 
   .flow {
-    display: inline;       
-    font-size: 44px;
-    line-height: 1.1;
+    display: inline;
+    font-size: 38px;
+    margin-left: 10px;
     white-space: nowrap;
   }
 
