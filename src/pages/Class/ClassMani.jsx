@@ -15,10 +15,11 @@ const ClassMani = () => {
         <h1 className="classes-title">Classes</h1>
       </div>
     </section>
-    {/* <TickerBar/> */}
+    
     
           <Team2 />
-          {/* <CTA/> */}
+          
+          
           </>
 
   );

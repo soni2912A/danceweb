@@ -1,105 +1,185 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Semi+Condensed:wght@300;400;600;700&display=swap');
-@import "@fontsource/encode-sans-expanded"; 
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Semi+Condensed:wght@600&display=swap');
 
 
 
 
-.founder-wrapper {
+
+
+.founders-section{
   display: flex;
-  width: 100%;
-  /* min-height: 100vh; */
-   z-index: 10;
-}
-
-/* LEFT SIDE */
-.founder-left {
-  width: 49%;
-  padding: 5rem 4rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  min-height: 90vh;
   background: white;
+  
+   
 }
 
-.founder-left h2 {
- font-weight: 600;
-  font-size: 37px;
-  font-family: 'Encode Sans Semi Condensed', sans-serif;
-  margin-bottom: 26rem;
-  margin-left: -2rem;
-}
-
-.quote {
-  font-family: 'Encode Sans Semi Condensed', sans-serif;
-  font-weight: 400; 
-  font-size: 30px;
-  margin-bottom: 10rem;
-  margin-left: -2rem;
-}
-
-.quote-author {
-  margin-top: -7rem;
-  font-family: 'Encode Sans Semi Condensed', sans-serif;
-  font-weight: 400; 
-  font-size: 17px;
-   margin-left: -2rem;
-}
-
-/* RIGHT SIDE USING FIGURE */
-.founder-right {
-  width: 55%;
+/* LEFT */
+.left{
+  flex: 1;
   display: flex;
   flex-direction: column;
-  /* padding: 3rem; */
+  justify-content: space-between;
+  gap: 8rem;
+
 }
 
-/* FIGURE STYLE */
-.founder-figure {
-  margin: 0;
-  padding: 0;
-  width: 100%;
+.left h2{
+  font-size: 2.5rem;
+  font-family: 'Encode Sans Semi Condensed', sans-serif;
+  font-weight: 600;
+  margin-top: 14rem;
+  margin-left: 2rem;
 }
 
-.founder-figure img {
+.quote{
+    max-width: 390px;
+}
+
+.quote blockquote{
+  font-size: 1.7rem;
+  font-family: 'Encode Sans Semi Condensed', sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  margin-bottom: 2.7rem;
+  margin-left: 2rem;
+}
+
+.quote p{
+  font-size: 1rem;
+  font-family: 'Encode Sans Semi Condensed', sans-serif;
+  font-weight: 400;
+ margin-bottom: 10rem;
+  margin-left: 2rem;
+}
+
+/* RIGHT */
+.right{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.founder-card{
+  position: relative;
+  /* height: 50vh; */
+  overflow: hidden;
+}
+
+.founder-card img{
   width: 100%;
-  /* height: 380px; */
-  /* height: 35vh; */
-  aspect-ratio: 1/0.4;
+  height: 100%;
   object-fit: cover;
+    /* object-position: center top;   
+  transform: scale(1.01); */
 }
 
-/* Caption (color strip) */
-.caption {
-  padding: 1.5rem 2rem;
-  /* font-family: "Encode Sans Semi Condensed", sans-serif; */
-  margin-top: -4px;
+/* CAPTION BAR */
+.caption{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 1.1rem 2rem;
+  color: black;
 }
 
-.caption h3 {
-  margin-bottom: 0.5em;
- font-family: 'DM Sans', sans-serif;
-  font-weight: 700; 
-  font-size: 24px;
-  color:#000000;
-  /* padding-top: -9px; */
+.caption h3{
+font-size: 1.4rem;
+font-family: 'DM Sans', sans-serif;
+font-weight: 700;
+margin-left: -0.5rem;
+
+  
 }
 
-.caption p {
-  margin: 0px;
-  color: #000000;
-  font-size:16px;
+.caption p{
+  font-size: 1rem;
   font-family: 'Encode Sans Expanded', sans-serif;
   font-weight: 400;
+  margin-left: -0.5rem;
+  margin-top: 0.5rem;
 }
 
-/* Colors */
-.magenta {
-  background: #ff00ff;
-  color: white;
+/* COLORS */
+.magenta{
+  background: #D900FF;
 }
 
-.blue1 {
-  background: #c9f8ff;
-  color: black;
+.cyan{
+  background: #D0FBF9;
+}
+
+/* MOBILE VIEW */
+@media (max-width: 768px){
+
+  .founders-section{
+    flex-direction: column; 
+
+    /* min-height: auto; */
+  }
+
+  .left{
+    order: 1;
+    padding: 3rem 1.5rem;
+    gap: 3rem;
+  }
+
+  .left h2{
+    margin: 0;
+    font-size: 2.8rem;
+    padding-bottom: 8rem;
+  }
+
+  .quote{
+    max-width: 260px;   /* truth khali anayla */
+  }
+
+  .quote blockquote{
+    margin: 0;
+    font-size: 1.8rem;
+    padding-bottom: 2rem;
+    font-weight: 400;
+    width: 130%;
+
+  }
+
+  .quote p{
+    margin: 1rem 0 0 0;
+    font-weight: 400;
+    font-size: 1.5rem;
+    padding-top: 1.8rem;
+  }
+
+  .right{
+    order: 2;
+  }
+
+  .founder-card{
+     height: auto;  /*   image natural height */
+      position: relative; 
+      /* display:content;
+      height: 50%;
+      width: 100%; */
+  }
+
+  .founder-card img{
+    height: 50%;
+      width: 100%;
+    /* display:block; */
+    object-fit:contain;
+  }
+
+  .caption{
+    position: absolute;   /* overlay nahi mobile la */
+    padding: 1rem 1.5rem;
+     bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+
+}
+@media (min-width: 767px) and (max-width: 992px) {
+
 }

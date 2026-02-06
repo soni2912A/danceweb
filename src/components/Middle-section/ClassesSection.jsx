@@ -1,21 +1,21 @@
 import React from "react";
-import "./classes.css";
+import "./Vision.css";
 import classImg from "../../assets/images/class1.png";
 
 const ClassesSection = () => {
   return (
-    <section className="class-wrapper">
-      <div className="class-container">
+    <section className="vision-wrapper">
+      <div className="vision-container">
 
         {/* LEFT IMAGE */}
-        <div className="class-left1 class-square-box">
+        <div className="vision-left square-box">
           <img src={classImg} alt="Classes" />
-          <h1 className="class-title1">Classes</h1>
+          <h1 className="vision-title">Classes</h1>
         </div>
 
         {/* RIGHT CONTENT */}
-        <div className="class-right1 class-square-box">
-          <div className="arrange-text1">
+        <div className="vision-right square-box">
+          <div className="arrange-text">
             <h2>Our Classes</h2>
 
             <p>

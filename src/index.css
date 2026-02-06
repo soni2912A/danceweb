@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Semi+Condensed:wght@300;400;500;600;700&display=swap');
+@import "@fontsource/encode-sans-expanded";
+
+
 .App{
   display: flex;
   flex-direction: column;

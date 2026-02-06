@@ -1,6 +1,6 @@
 import React from "react";
-import founder1 from "../../assets/images/founder1.png";
-import Founder from "../../assets/images/founder2.png";
+import founder1 from "../../assets/images/founder2home.png";
+import Founder from "../../assets/images/founder1home.png";
 import Studio from "../../assets/images/studio.png";
 import "./Team.css";
 
@@ -10,11 +10,11 @@ function Team() {
       <section className="team">
         <div className="soni1">
           <div>
-            <div className="founder-card">
+            {/* <div className="founder-card"> */}
               <div className="soni2">
                 <h2>Founders</h2>
               </div>
-            </div>
+            {/* </div> */}
           </div>
 
           <div>

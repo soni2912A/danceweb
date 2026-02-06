@@ -1,11 +1,11 @@
 import React from "react";
-import "./vision.css";
+import "./Vision.css";
 import visionImg from "../../assets/images/vision1.png";
 // import classImg from "../../assets/images/class1.png";
 
 const VisionSection = () => {
   return (
-    <div className="vision-wrapper">
+    <section className="vision-wrapper">
       <div className="vision-container">
 
        <figure className="vision-left square-box">
@@ -30,7 +30,7 @@ const VisionSection = () => {
 
       </div>
       
-    </div>
+    </section>
   );
 };
 
