@@ -1,5 +1,5 @@
 import React from "react";
-import "./tickerbar.css";
+import "./Tickerbar.css";
 
 const messages = [
   "Fluid. Expressive. Powerful. Move with us!",

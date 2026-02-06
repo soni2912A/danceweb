@@ -1,43 +1,45 @@
 import React from "react";
-import "./founders.css";
+import "./Founders.css";
 import founder1 from "../../assets/images/founder1.png";
 import founder2 from "../../assets/images/founder2.png";
 
 const FoundersSection = () => {
   return (
-    <div className="founder-wrapper">
+    <section className="founders-section">
 
       {/* LEFT SIDE */}
-      <div className="founder-left">
+      <div className="left">
         <h2>Our Founders</h2>
-        <p className="quote">"Find your flow, and dance your <br />truth."</p>
-        <p className="quote-author">— Sophia Bennett</p>
+
+        <div className="quote">
+          <blockquote>
+            "Find your flow, and dance your truth."
+          </blockquote>
+          <p>— Sophia Bennett</p>
+        </div>
       </div>
 
-      {/* RIGHT SIDE USING FIGURE */}
-      <div className="founder-right">
+      {/* RIGHT SIDE */}
+      <div className="right">
 
-        {/* FIGURE 1 */}
-        <figure className="founder-figure">
-          <img src={founder1} alt="Founder" />
-          <figcaption className="caption magenta">
+        <div className="founder-card">
+          <img src={founder1} alt="Founder 1" />
+          <div className="caption magenta">
             <h3>Sophia Bennett</h3>
             <p>Founder & Instructor</p>
-          </figcaption>
-        </figure>
+          </div>
+        </div>
 
-        {/* FIGURE 2 */}
-        <figure className="founder-figure">
-          <img src={founder2} alt="Founder" />
-          <figcaption className="caption blue1">
+        <div className="founder-card">
+          <img src={founder2} alt="Founder 2" />
+          <div className="caption cyan">
             <h3>Alisa Morris</h3>
             <p>Founder & Program Manager</p>
-          </figcaption>
-        </figure>
+          </div>
+        </div>
 
       </div>
-
-    </div>
+    </section>
   );
 };
 

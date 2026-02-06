@@ -1,12 +1,12 @@
 import React from "react";
-import "./cta.css";
+import "./Cta.css";
 
 const CTASection = () => {
   return (
     <div className="cta-section">
       <h2>
         Whether you're a beginner looking to explore expressive movement 
-        or <br />an advanced dancer ready to refine your technique, we have classes <br />for you!
+        or an advanced dancer ready to refine your technique, we have classes for you!
       </h2>
 
       <button>Reserve your spot</button>
