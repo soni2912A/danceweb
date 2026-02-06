@@ -1,12 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Semi+Condensed:wght@300;400;500;600;700&display=swap');
-@import "@fontsource/encode-sans-expanded";
 
-/* ================= RESET ================= */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
 /* ================= TEAM ROOT ================= */
 .team {
@@ -19,16 +11,15 @@
 
 .soni1 {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 37% 1fr 1fr;
   height: 500px;
-  margin-left: 82px;
 }
 
 /* Left black column */
 .soni2 {
   display: flex;
   align-items: flex-start;
-  width: 37%;
+  width: 40%;
 }
 
 .soni2 h2 {
@@ -50,10 +41,9 @@
   /* width: 37%; */
   height: 100%;
   object-fit: cover;
-  display: block; /* removes image gap */
-}
+  display: block; 
 
-/* Color strip (REAL SITE STYLE) */
+}
 .info {
   position: absolute;
   bottom: 0;
@@ -82,7 +72,7 @@
   background: #c0f0ff;
 }
 
-/* ================= INSTRUCTORS ================= */
+/*  INSTRUCTORS  */
 
 .instructors-section {
   display: flex;
@@ -139,7 +129,7 @@
   margin-top: 40px;
 }
 
-/* ================= OUR SPACE ================= */
+/*  OUR SPACE */
 
 .ourspace-section {
   display: flex;
@@ -185,7 +175,7 @@
   color: #b44dff;
 }
 
-/* ================= TABLET ================= */
+/* TABLET  */
 
 @media (max-width: 1024px) {
   .soni1 {
@@ -221,7 +211,7 @@
   }
 }
 
-/* ================= MOBILE ================= */
+/*  MOBILE  */
 
 @media (max-width: 768px) {
   .soni1 {

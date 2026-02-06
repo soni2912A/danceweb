@@ -2,6 +2,7 @@
   box-sizing: border-box;
 }
 
+/* MAIN SECTION */
 .classes-section {
   display: flex;
   background: #000;
@@ -12,14 +13,15 @@
 /* LEFT */
 .classes-left {
   width: 32%;
-  padding: 80px 48px;
+  padding: 40px;
   border-right: 1px solid #262626;
 }
 
 .classes-left h2 {
-  font-size: 44px;
-  font-weight: 600;
-  line-height: 1.25;
+  font-size: 43px;
+  font-weight: 500;
+  line-height: 1.1;
+  max-width: 280px;
 }
 
 /* RIGHT GRID */
@@ -36,17 +38,18 @@
   color: #000;
   display: flex;
   flex-direction: column;
-  border-bottom: 1px solid #e5e5e5;
+  border-bottom: 1px solid #262626;
 }
 
 .card:nth-child(odd) {
-  border-right: 1px solid #e5e5e5;
+  border-right: 1px solid #262626;
 }
 
 /* IMAGE */
 .img-wrap {
+  position: relative;
   width: 100%;
-  height: 300px;
+  height: 350px;
   overflow: hidden;
 }
 
@@ -56,112 +59,395 @@
   object-fit: cover;
 }
 
-/* TEXT */
-.card-content {
-  padding: 18px 20px 22px;
-}
 
-.card-content h3 {
-  font-size: 18px;
-  font-weight: 600;
-  margin-bottom: 6px;
-}
-
-.card-content p {
-  font-size: 14px;
-  color: #555;
-  margin-bottom: 10px;
-}
-
-.card-content span {
-  font-size: 13px;
-  color: #2b5cff;
-  font-weight: 500;
-}
-
-/* FULL WIDTH */
-.card.full {
-  grid-column: span 2;
-  border-right: none;
-}
-
-/* OUR PROMISE */
-/* OUR PROMISE WITH IMAGE */
-/* OUR PROMISE SECTION */
-.our-promise-section {
-  grid-column: span 2;
-  display: flex;
-  min-height: 420px;
-}
-
-/* IMAGE SIDE */
-.promise-image {
-  width: 50%;
-}
-
-.promise-image img {
-  width: 100%;
+.card-full{
+  width: 200%;
   height: 100%;
   object-fit: cover;
 }
 
-/* BLUE CONTENT SIDE */
-.promise-content {
-  width: 50%;
-  background: #1e3cff;
+
+.img-wrap1 {
+  position: relative;
+  width: 100%;
+  height: 350px;
+  overflow: hidden;
+}
+
+.img-wrap1 img {
+  width: 100%;
+  height: 140%;
+  object-fit: cover;
+}
+
+/* IMAGE TEXT */
+.img-label {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  font-size: 100px;
+  font-weight: 350;
   color: #fff;
-  padding: 60px 48px;
+}
+
+/* CARD CONTENT */
+.card-content {
+  padding: 18px 0 0;
   display: flex;
   flex-direction: column;
+}
+
+.card-content h3 {
+  padding-left: 20px;
+  padding-bottom:10px ;
+}
+
+.card-content p {
+  font-size: 14px;
+  color:black;
+  margin-bottom: 14px;
+  padding-left: 20px;
+  
+}
+
+/* BOTTOM BAR (DAY + BOOK NOW) */
+.card-bottom {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  border-top: 1px solid #262626;
+  margin-top: auto;
+}
+
+/* DAY / TIME */
+.card-bottom .time {
+  padding: 10px 20px;
+  font-size: 13px;
+  color: #1e40ff;
+  border-right: 1px solid #262626;
+}
+
+/* BOOK BUTTON */
+.book {
+  padding: 10px 18px;
+  font-size: 12px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  text-transform: capitalize;
+}
+
+.book:hover {
+  background: #000;
+  color: #fff;
+}
+
+/* ////////////////////////////// */
+.card-content1 {
+  padding: 18px 0 0;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+}
+
+.card-content1 h3 {
+  padding-left: 20px;
+  padding-bottom:10px ;
+  color: #000;
+}
+
+.card-content1 p {
+  font-size: 14px;
+  color:black;
+  margin-bottom: 14px;
+  padding-left: 20px;
+  
+}
+
+/* BOTTOM BAR (DAY + BOOK NOW) */
+.card-bottom1 {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  border-top: 1px solid #262626;
+  margin-top: auto;
+}
+
+/* DAY / TIME */
+.card-bottom1 .time1 {
+  padding: 10px 20px;
+  font-size: 13px;
+  color: #1e40ff;
+  border-right: 1px solid #262626;
+}
+
+/* BOOK BUTTON */
+.book1 {
+  padding: 10px 18px;
+  font-size: 12px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  text-transform: capitalize;
+}
+
+.book1:hover {
+  background: #000;
+  color: #fff;
+}
+
+/* /////////////////////////////////////////////// */
+/* ================= OUR PROMISE ================= */
+
+.promise-section {
+  display: grid;
+  grid-template-columns: 32% 1fr;
+  height: 100vh;
+   border: 1px solid #262626;
+   
+  /* height: 90vh; */
+
+}
+
+.promise-left {
+  background: #000;
+  color: #fff;
+  display: flex;
+  align-items: center;
   justify-content: center;
 }
 
-/* .promise-content h2 {
-  font-size: 40px;
+.promise-left h2 {
+  align-self: flex-start;
+  text-align: left;
+  font-size: 3rem;
   font-weight: 600;
-  line-height: 1.25;
-  margin-bottom: 18px;
-} */
-
-.promise-content p {
-  font-size: 15px;
-  line-height: 1.6;
-  max-width: 420px;
+  padding-top: 0.7em;
+  
+  /* padding-right: 239px; */
+    /* padding-bottom: 365px; */
 }
 
-/* -------- TABLET -------- */
-@media (max-width: 1024px) {
-  .promise-content h2 {
-    font-size: 34px;
-  }
-
-  .promise-content {
-    padding: 48px 36px;
-  }
+/* OUR PROMISE IMAGE ONLY */
+.promise-image {
+  width: 100%;          
+  overflow: hidden;
+  height: 100%;
+  /* position: relative; */
 }
 
-/* -------- MOBILE -------- */
-@media (max-width: 600px) {
-  .our-promise-section {
+.promise-image > div{
+  width: 100%;
+  padding: 1.4em;
+  background-color: #1F41FF;
+  color: white;
+  font-family: 'Encode Sans Semi Condensed';
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.promise-image > div p{
+  max-width: 85%;
+}
+
+.promise-image img {
+  width: 100%;
+  height: 65%;
+  object-fit: cover;     
+  display: block;
+}
+
+
+
+/* mobile view  */
+@media (max-width: 767px) {
+
+  /* MAIN CLASSES SECTION */
+  .classes-section {
     flex-direction: column;
-    grid-column: span 1;
+    min-height: auto;
   }
 
-  .promise-image,
-  .promise-content {
+  .classes-left {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid #262626;
+    padding: 24px;
+  }
+
+  .classes-left h2 {
+    font-size: 28px;
+    max-width: 100%;
+  }
+
+  .classes-right {
+    width: 100%;
+    grid-template-columns: 1fr;
+    border-left: none;
+  }
+
+  /* NORMAL CARDS */
+  .card {
+    border-right: none !important;
+  }
+
+  .img-wrap,
+  .img-wrap1 {
+    height: 240px;
+  }
+
+  .img-label {
+    font-size: 60px;
+  }
+
+  /* FULL WIDTH CARD */
+  .card-full {
     width: 100%;
   }
 
-  .promise-content {
-    padding: 36px 20px;
+  /* 🔥 BOTTOM BAR — SAME AS DESKTOP */
+  .card-bottom,
+  .card-bottom1 {
+    grid-template-columns: 1fr auto;
+    align-items: center;
   }
 
-  .promise-content h2 {
-    font-size: 28px;
+  .card-bottom .time,
+  .card-bottom1 .time1 {
+    border-right: 1px solid #262626;
+    border-bottom: none;
+    text-align: left;
+    padding: 10px 14px;
+    font-size: 12px;
   }
 
-  .promise-content p {
-    font-size: 14px;
+  .book,
+  .book1 {
+    width: auto;
+    padding: 10px 14px;
+    font-size: 12px;
+  }
+
+  /* OUR PROMISE SECTION */
+  .promise-section {
+    grid-template-columns: 1fr;
+    height: auto;
+  }
+
+  .promise-left {
+    padding: 24px;
+    justify-content: flex-start;
+  }
+
+  .promise-left h2 {
+    font-size: 2rem;
+  }
+
+  .promise-image > div {
+    font-size: 1.2rem;
+  }
+
+  .promise-image img {
+    height: 260px;
+  }
+}
+
+
+
+
+ @media (min-width: 768px) and (max-width: 1023px) {
+
+  /* ===== CLASSES SECTION (DESKTOP LIKE) ===== */
+  .classes-section {
+    flex-direction: row;
+    min-height: 100vh;
+  }
+
+  .classes-left {
+    width: 32%;
+    border-right: 1px solid #262626;
+    border-bottom: none;
+    padding: 40px;
+  }
+
+  .classes-left h2 {
+    font-size: 40px;
+    max-width: 280px;
+  }
+
+  .classes-right {
+    width: 68%;
+    grid-template-columns: repeat(2, 1fr);
+    border-left: 1px solid #262626;
+  }
+
+  .card {
+    border-right: 1px solid #262626;
+  }
+
+  .card:nth-child(even) {
+    border-right: none;
+  }
+
+  .img-wrap,
+  .img-wrap1 {
+    height: 350px;
+  }
+
+  .img-label {
+    font-size: 100px;
+  }
+
+  .card-full {
+    width: 200%;
+  }
+
+  .card-bottom,
+  .card-bottom1 {
+    grid-template-columns: 1fr auto;
+  }
+
+  /* ===== OUR PROMISE SECTION ===== */
+  .promise-section {
+    grid-template-columns: 32% 1fr;
+    height: 100vh;
+  }
+
+  .promise-left {
+    background: #000;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .promise-left h2 {
+    font-size: 3rem;
+    font-weight: 600;
+    padding-top: 0.7em;
+  }
+
+  /* IMAGE + BLUE BOX — Blue box BELOW IMAGE */
+  .promise-image {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .promise-image img {
+    order: 1;  /* Image first */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .promise-image > div {
+    order: 2; /* Blue box below image */
+    font-size: 2rem;
+    background-color: #1F41FF;
+    color: white;
+    font-family: 'Encode Sans Semi Condensed';
+    font-weight: 700;
+    padding: 1.4em;
   }
 }
 
