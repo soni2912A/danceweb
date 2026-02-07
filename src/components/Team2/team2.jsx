@@ -1,6 +1,5 @@
 import React from "react";
 import "./team2.css";
-
 import g1 from "../../assets/images/g1.jpg";
 import homep from "../../assets/images/homep.jpg";
 import g4 from "../../assets/images/about.jpg";
@@ -8,18 +7,13 @@ import d5 from "../../assets/images/d5.jpg";
 import b2 from "../../assets/images/b2.jpg";
 import ourPromise from "../../assets/images/ourpromise.jpg";
 
-
 const Team2 = () => {
   return (
     <section className="classes-section">
-      {/* LEFT SIDE */}
       <div className="classes-left">
-        <h2>
-          Booking Experience <br /> for Classes
-        </h2>
+        <h2>Booking Experience for Classes</h2>
       </div>
 
-      {/* RIGHT SIDE */}
       <div className="classes-right">
         <div className="card">
           <div className="img-wrap">
@@ -65,7 +59,6 @@ const Team2 = () => {
           </div>
         </div>
 
-        {/* FULL WIDTH */}
         <div className="card full">
           <div className="img-wrap">
             <img src={b2} alt="Contact Improvisation" />
@@ -77,24 +70,15 @@ const Team2 = () => {
           </div>
         </div>
 
-        {/* OUR PROMISE */}
-        {/* OUR PROMISE SECTION */}
-<div className="our-promise-section">
-  <div className="promise-image">
-    <img src={ourPromise} alt="Our Promise" />
-  </div>
-
-  <div className="promise-content">
-    {/* <h2>
-      Our Promise <br /> 
-    </h2> */}
-    
-  </div>
-</div>
-
-</div>
-
-      
+        <div className="our-promise-section">
+          <div className="promise-image">
+            <img src={ourPromise} alt="Our Promise" />
+          </div>
+          <div className="promise-content">
+            <p>We promise to provide the best dance experience with professional instructors and state-of-the-art facilities for all skill levels.</p>
+          </div>
+        </div>
+      </div>
     </section>
   );
 };

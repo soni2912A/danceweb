@@ -1,21 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Condensed:wght@600&display=swap');
-
-/* ================= RESET ================= */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* ================= HERO ================= */
 .hero {
   width: 100%;
-  height: 85vh;
+  height: 94vh;
   position: relative;
   overflow: hidden;
 }
 
-/* ================= IMAGE ================= */
 .hero-image-box {
   position: fixed;
   inset: 0;
@@ -29,7 +18,6 @@
   filter: grayscale(100%) brightness(60%);
 }
 
-/* ================= CONTENT ================= */
 .hero-content {
   position: absolute;
   top: 20%;
@@ -37,37 +25,34 @@
   color: white;
 }
 
-/* ================= TITLE ================= */
 .hero-title {
   font-family: "Encode Sans Condensed", sans-serif;
   font-weight: 600;
   line-height: 1;
 }
 
-/* ===== DESKTOP + TABLET DEFAULT ===== */
 .find {
-  display: inline-block;   /* Find your same line */
   font-size: 140px;
+  display: block;
 }
 
 .your {
-  margin-left: 16px;       /* space between Find & your */
+  margin-left: 16px;
 }
 
 .flow {
-  display: block;          /* flow next line */
+  display: block;
   font-size: 110px;
   margin-top: -12px;
 }
 
-/* ================= BUTTON ================= */
 .hero-btn {
   padding: 0.9rem 1.6rem;
   background: #89d7e2;
   border: none;
   font-size: 1rem;
   cursor: pointer;
-  transition: 0.2s;
+  transition: background 0.2s;
   margin-top: 30%;
 }
 
@@ -75,47 +60,75 @@
   background: #D900FF;
 }
 
-/* ================= TABLET ================= */
-@media (max-width: 1024px) {
+@media (max-width: 1200px) {
   .find {
     font-size: 120px;
   }
 
   .flow {
-    font-size: 90px;
+    font-size: 100px;
   }
 }
 
-/* ================= MOBILE (UNCHANGED LAYOUT) ================= */
-@media (max-width: 768px) {
-
-  .hero-content {
-    top: auto;
-    bottom: 14%;
-    left: 5%;
-  }
-
-  /* 🔥 ONLY MOBILE CHANGE */
+@media (max-width: 1024px) {
   .find {
-    display: block;        /* Find एकटाच वर */
-    font-size: 92px;
-  }
-
-  .your {
-    display: inline;       /* your + flow same line */
-    margin-left: 0;
+    font-size: 100px;
   }
 
   .flow {
-    display: inline;       /* 🔥 your flow ekach line */
-    font-size: 44px;
-    line-height: 1.1;
-    white-space: nowrap;
+    font-size: 85px;
+    margin-top: -8px;
   }
 
   .hero-btn {
-    margin-top: 1.4rem;
-    font-size: 0.85rem;
+    margin-top: 25%;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-content {
+    top: auto;
+    bottom: 15%;
+    left: 5%;
+  }
+
+  .find {
+    font-size: 70px;
+  }
+
+  .flow {
+    font-size: 60px;
+    margin-top: -6px;
+  }
+
+  .hero-btn {
+    margin-top: 1.5rem;
+    padding: 0.8rem 1.4rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-content {
+    left: 1rem;
+    right: 1rem;
+    text-align: center;
+  }
+
+  .find {
+    font-size: 50px;
+  }
+
+  .your {
+    margin-left: 8px;
+  }
+
+  .flow {
+    font-size: 45px;
+    margin-top: -4px;
+  }
+
+  .hero-btn {
+    font-size: 0.9rem;
     padding: 0.7rem 1.2rem;
   }
 }

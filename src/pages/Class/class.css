@@ -1,22 +1,23 @@
 .classes-hero {
-  height: 100vh;
+  min-height: 100svh;
   width: 100%;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
-  z-index: -1; /* background behind overlay */
+  z-index: -1;
 }
 
 .overlay {
   height: 100%;
   width: 100%;
   background: rgba(0, 0, 0, 0.55);
-  display: flex;
-  align-items: left;
-  justify-content:left;
   position: relative;
-  z-index: 1; /* bring text on top */
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  /* bring text on top */
 }
 
 .classes-title {
@@ -26,11 +27,13 @@
   /* text-transform: uppercase; */
   margin: 80px;
   position: relative;
-  z-index: 2; /* highest */
+  z-index: 2;
+  /* highest */
 }
 
 @media(max-width: 768px) {
   .classes-title {
     font-size: 4rem;
+
   }
 }
