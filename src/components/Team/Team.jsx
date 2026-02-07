@@ -10,11 +10,11 @@ function Team() {
       <section className="team">
         <div className="soni1">
           <div>
-            <div className="founder-card">
+            {/* <div className="founder-card"> */}
               <div className="soni2">
                 <h2>Founders</h2>
               </div>
-            </div>
+            {/* </div> */}
           </div>
 
           <div>

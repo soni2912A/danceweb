@@ -189,6 +189,16 @@
   .soni1,
   .instructors-section {
     grid-template-columns: 1fr 1fr;
+    height: auto;
+  }
+
+  .soni2 {
+    grid-column: 1 / -1;
+    height: 120px;
+  }
+
+  .instructors-section {
+    grid-template-columns: 1fr 1fr;
   }
 
   .instructors-right {

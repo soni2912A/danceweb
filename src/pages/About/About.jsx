@@ -18,7 +18,7 @@ const About = () => {
       <div>
         <TickerBar/>
                  
-      {/* <Team/> */}
+     
 
       </div>
     </section>
