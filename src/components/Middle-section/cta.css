@@ -4,6 +4,7 @@
   padding: 8rem 4rem;
   text-align: center;
   font-family: 'Encode Sans Semi Condensed', sans-serif;
+  z-index: 200;
 }
 
 .cta-section h2 {

@@ -1,6 +1,7 @@
 .founder-wrapper {
   display: flex;
   width: 100%;
+  z-index: 200;
 }
 
 .founder-left {
