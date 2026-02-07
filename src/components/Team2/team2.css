@@ -7,15 +7,14 @@
 
 .classes-left {
   width: 32%;
-  padding: 40px;
+  padding: 80px 48px;
   border-right: 1px solid #262626;
 }
 
 .classes-left h2 {
-  font-size: 43px;
-  font-weight: 500;
-  line-height: 1.1;
-  max-width: 280px;
+  font-size: 44px;
+  font-weight: 600;
+  line-height: 1.25;
 }
 
 .classes-right {
@@ -30,15 +29,14 @@
   color: #000;
   display: flex;
   flex-direction: column;
-  border-bottom: 1px solid #262626;
+  border-bottom: 1px solid #e5e5e5;
 }
 
 .card:nth-child(odd) {
-  border-right: 1px solid #262626;
+  border-right: 1px solid #e5e5e5;
 }
 
 .img-wrap {
-  position: relative;
   width: 100%;
   height: 450px;
   overflow: hidden;
@@ -51,39 +49,25 @@
 }
 
 .card-content {
-  padding: 18px 0 0;
-  display: flex;
-  flex-direction: column;
+  padding: 18px 20px 22px;
 }
 
 .card-content h3 {
-  padding-left: 20px;
-  padding-bottom:10px ;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 6px;
 }
 
 .card-content p {
   font-size: 14px;
-  color:black;
-  margin-bottom: 14px;
-  padding-left: 20px;
-  
+  color: #555;
+  margin-bottom: 10px;
 }
 
-/* BOTTOM BAR (DAY + BOOK NOW) */
-.card-bottom {
-  display: grid;
-  grid-template-columns: 1fr auto;
-  align-items: center;
-  border-top: 1px solid #262626;
-  margin-top: auto;
-}
-
-/* DAY / TIME */
-.card-bottom .time {
-  padding: 10px 20px;
+.card-content span {
   font-size: 13px;
-  color: #1e40ff;
-  border-right: 1px solid #262626;
+  color: #2b5cff;
+  font-weight: 500;
 }
 
 .card.full {
@@ -121,27 +105,10 @@
   height: 100vh;
 }
 
-/* DAY / TIME */
-.card-bottom1 .time1 {
-  padding: 10px 20px;
-  font-size: 13px;
-  color: #1e40ff;
-  border-right: 1px solid #262626;
-}
-
-/* BOOK BUTTON */
-.book1 {
-  padding: 10px 18px;
-  font-size: 12px;
-  background: transparent;
-  border: none;
-  cursor: pointer;
-  text-transform: capitalize;
-}
-
-.book1:hover {
-  background: #000;
-  color: #fff;
+.promise-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 @media (max-width: 1200px) {
@@ -263,34 +230,11 @@
     padding: 28px 20px;
   }
 
-  .card-content {
-    padding: 16px 18px 20px;
+  .promise-content p {
+    font-size: 14px;
   }
 
-  .card-content h3 {
-    font-size: 16px;
-  }
-
-  .card-content p {
-    font-size: 13px;
-  }
-
-  .card-content span {
-    font-size: 12px;
-  }
-
-  .img-wrap {
+  .promise-image {
     height: 200px;
-  }
-
-  .promise-content {
-    padding: 28px 20px;
-  }
-
-  .classes-left {
-    width: 32%;
-    border-right: 1px solid #262626;
-    border-bottom: none;
-    padding: 40px;
   }
 }

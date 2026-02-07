@@ -8,105 +8,65 @@ import b2 from "../../assets/images/b2.jpg";
 import ourPromise from "../../assets/images/ourpromise.jpg";
 
 const Team2 = () => {
-  return ( <> 
+  return (
     <section className="classes-section">
       <div className="classes-left">
-        <h2>Booking Experience for Classes</h2>
         <h2>Booking Experience for Classes</h2>
       </div>
 
       <div className="classes-right">
-
-        {/* CARD 1 */}
         <div className="card">
           <div className="img-wrap">
             <img src={g1} alt="Hip Hop Foundations" />
-            <span className="img-label">C1</span>
           </div>
           <div className="card-content">
             <h3>Hip Hop Foundations</h3>
-            <p>
-              This class introduces hip hop dance, including isolations,
-              popping, locking, and basic footwork.
-            </p>
-           <div className="card-bottom">
-  <span className="time">Tuesday 7:00 PM – 9:00 PM</span>
-  <button className="book">Book Now</button>
-</div>
+            <p>This class introduces hip hop dance.</p>
+            <span>Tuesday 7:00PM – 9:00PM</span>
           </div>
         </div>
 
-        {/* CARD 2 */}
         <div className="card">
           <div className="img-wrap">
             <img src={homep} alt="Hip Hop Freestyle" />
-            <span className="img-label">C2</span>
           </div>
           <div className="card-content">
             <h3>Hip Hop Freestyle</h3>
-            <p>
-              This class helps you develop your own unique movement vocabulary
-              and respond to music in the moment.
-            </p>
-           <div className="card-bottom">
-  <span className="time">Tuesday 7:00 PM – 9:00 PM</span>
-  <button className="book">Book Now</button>
-</div>
+            <p>Develop freestyle movement.</p>
+            <span>Tuesday 7:00PM – 9:00PM</span>
           </div>
         </div>
 
-        {/* CARD 3 */}
         <div className="card">
           <div className="img-wrap">
             <img src={g4} alt="Jazz Technique" />
-            <span className="img-label">C4</span>
           </div>
           <div className="card-content">
             <h3>Jazz Technique</h3>
-            <p>
-              This class focuses on classic jazz styles while building strength,
-              flexibility, and musicality.
-            </p>
-           <div className="card-bottom">
-  <span className="time">Tuesday 7:00 PM – 9:00 PM</span>
-  <button className="book">Book Now</button>
-</div>
+            <p>Focus on jazz styles & flexibility.</p>
+            <span>Wednesday 7:00PM – 9:00PM</span>
           </div>
         </div>
 
-        {/* CARD 4 */}
         <div className="card">
           <div className="img-wrap">
             <img src={d5} alt="Jazz Funk" />
-            <span className="img-label">D5</span>
           </div>
           <div className="card-content">
             <h3>Jazz Funk</h3>
-            <p>
-              This class is perfect for those who love to dance with power and <br />
-              attitude.
-            </p>
-           <div className="card-bottom">
-  <span className="time">Tuesday 7:00 PM – 9:00 PM</span>
-  <button className="book">Book Now</button>
-</div>
+            <p>Powerful and expressive dance.</p>
+            <span>Thursday 7:00PM – 9:00PM</span>
           </div>
         </div>
 
         <div className="card full">
           <div className="img-wrap">
             <img src={b2} alt="Contact Improvisation" />
-            <span className="img-label">B2</span>
           </div>
-          <div className="card-content1">
+          <div className="card-content">
             <h3>Contact Improvisation</h3>
-            <p>
-              This class focuses on movement through touch and weight sharing.
-            </p>
-           <div className="card-bottom1">
-  <span className="time1">Tuesday 7:00 PM – 9:00 PM</span>
-  <button className="book1">Book Now</button>
-</div>
+            <p>Movement through touch & weight.</p>
+            <span>Friday 7:00PM – 9:00PM</span>
           </div>
         </div>
 
@@ -120,13 +80,7 @@ const Team2 = () => {
         </div>
       </div>
     </section>
-     </>
-    
-
-    
-    
   );
-
 };
 
 export default Team2;
